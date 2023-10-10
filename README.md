@@ -3,7 +3,7 @@ Pixhawk + Raspberry Pi + LTE(4G)
 It is the source code of the Raspberry Pi files.
 
 ## Hardwares/Components
-- Body: **F450**
+- frme: **F450**
 - FC: **Pixhawk1**
 - Onboard computer: **Raspberry 3**
 - Network: **dongel** (3G/4G)

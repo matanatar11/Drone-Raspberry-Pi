@@ -62,10 +62,5 @@ installed Python3 mavproxy dronekit
             python3 gotoNE.py
 
             
-            
-[IMG/IMG20231010133807.jpg
-](https://github.com/matanatar11/Drone-Raspberry-Pi-/blob/09eb527741f2d2b4d3e59384b3c278595eee55cd/IMG/IMG20231010133825.jpg)https://github.com/matanatar11/Drone-Raspberry-Pi-/blob/09eb527741f2d2b4d3e59384b3c278595eee55cd/IMG/IMG20231010133825.jpg
-   
-   
 
-
+![IMG20231010133839](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/f202259f-d0df-48d3-a937-0638c55def8f)

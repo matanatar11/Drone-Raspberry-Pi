@@ -61,6 +61,8 @@ installed Python3 mavproxy dronekit
       python3 scriptnem.py
             python3 gotoNE.py
 
+            IMG/IMG20231010133807.jpg
+
    
    
 

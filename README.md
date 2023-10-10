@@ -1,4 +1,4 @@
-#  drone project
+#  Drone project Autonomous
 Pixhawk + Raspberry Pi + LTE(4G) 
 It is the source code of the Raspberry Pi files.
 
@@ -6,14 +6,21 @@ It is the source code of the Raspberry Pi files.
 - Body: **F450**
 - FC: **Pixhawk1**
 - Onboard computer: **Raspberry 3**
-- Network: **ongel** (3G/4G)
+- Network: **dongel** (3G/4G)
 
 ## Features
-- Connect Pixhawk and Raspberry Pi using `mavlink`
+- Connect Pixhawk and Raspberry Pi using `mavlink`;
+- Raspberry Pi runs a python script that controls the drone;
 - Raspberry Pi send mavlink data to ground station through UDP;
-- Raspberry Pi runs a script that controls the drone;
 - FPV camera send video streaming to ground station;
 - The pilot can use radio control to switch on/off the video streaming;
+
+## Software
+- MissionPlanner;
+- QGroundControl;
+- Dronekit, Mavlink.;
+
+
 
 ## Source Files in /home/pi/
 | files in                                 | descriptions                                                                                    |
@@ -26,19 +33,31 @@ It is the source code of the Raspberry Pi files.
 | offboard/rtl-altitude.py                 | Adjust RTL altitude based on the max elevation on the RTL path (under development)              |
 
 
-## The enabled system services, in case you need to restart it
-    sudo systemctl restart mavlink-router
-    sudo systemctl restart jpeg-sender
-    sudo systemctl restart wvdial
-
-## Check mavlink-router service log
-    sudo journalctl -u mavlink-router
-
-## Convert h264 to mp4
-The sender2.py will record video on .h264 format. You need MP4Box to convert it to mp4 format
-
-    /usr/bin/MP4Box -add test.h264 test.mp4 -flat
 
 
+## Raspberry Pi setup 
+installed Python3 mavproxy dronekit
+
+   sudo apt-get update
+   sudo apt-get upgrade
+   sudo apt-get install python-pip
+   sudo apt-get install python-dev
+   sudo apt-get install python3-lxml
+   sudo apt-get install screen python3-wxgtk4.0 python3-lxml
+   sudo pip3 install pyserial
+   sudo pip3 install donekit
+   sudo pip3 install  MAVProxy
+
+## Connecting to Pixhawk from raspbrry pi
+   sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 
+
+
+## Raspbrry pi intrnet briudg to Pixhawk and Connecting to ground station
+   sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
+   sudo mavproxy.py --master=udp:10.0.0.8:14550 --out=/dev/ttyAMA0
+  
+
+   
+   
 
 

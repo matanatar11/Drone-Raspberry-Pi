@@ -38,23 +38,23 @@ It is the source code of the Raspberry Pi files.
 ## Raspberry Pi setup 
 installed Python3 mavproxy dronekit
 
-   sudo apt-get update
-   sudo apt-get upgrade
-   sudo apt-get install python-pip
-   sudo apt-get install python-dev
-   sudo apt-get install python3-lxml
-   sudo apt-get install screen python3-wxgtk4.0 python3-lxml
-   sudo pip3 install pyserial
-   sudo pip3 install donekit
-   sudo pip3 install  MAVProxy
+      sudo apt-get update
+      sudo apt-get upgrade
+      sudo apt-get install python-pip
+      sudo apt-get install python-dev
+      sudo apt-get install python3-lxml
+      sudo apt-get install screen python3-wxgtk4.0 python3-lxml
+      sudo pip3 install pyserial
+      sudo pip3 install donekit
+      sudo pip3 install  MAVProxy
 
 ## Connecting to Pixhawk from raspbrry pi
-   sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 
+      sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 
 
 
 ## Raspbrry pi intrnet briudg to Pixhawk and Connecting to ground station
-   sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
-   sudo mavproxy.py --master=udp:10.0.0.8:14550 --out=/dev/ttyAMA0
+      sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
+      sudo mavproxy.py --master=udp:10.0.0.8:14550 --out=/dev/ttyAMA0
   
 
    

@@ -56,6 +56,10 @@ installed Python3 mavproxy dronekit
       sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
       sudo mavproxy.py --master=udp:10.0.0.8:14550 --out=/dev/ttyAMA0
   
+## Run a script 
+     
+      python3 scriptnem.py
+            python3 gotoNE.py
 
    
    

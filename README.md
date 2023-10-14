@@ -24,7 +24,7 @@ It is the source code of the Raspberry Pi files.
 
 ## Raspberry Pi to Pixhawk Electric diagram 
 
-![Pixhawk-to-Raspberry-PI-3-scheme](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/db418a83-dc8f-466f-a249-8d93be9606d3)
+![Pixhawk-to-Raspberry-PI-3-scheme](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/da9c3078-5146-40d2-8bda-5e12142c2a5a)
 
 
 ## Raspberry Pi setup 
@@ -54,7 +54,8 @@ installed Python3 mavproxy dronekit
             python3 gotoNE.py
 
 
-![IMG20231010133839](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/f6176a0b-ea8d-49b1-83d7-5c259091426e)
+
+![IMG20231010133839](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/a7978788-da8f-452b-a103-98ebee92a2ab)
 
 
 
@@ -107,6 +108,15 @@ installed Python3 mavproxy dronekit
 
 
 
+            ## Source Files in /home/pi/
+| files in                                 | descriptions                                                                                    |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| glympse/glympse.py                       | Send drone's GPS position to Glympse                                                            |
+| mavlink-router-service/mavlink-router.sh | Routing mavlink from FC to GCS                                                                  |
+| jpeg-stream/sender2.py                   | Sending low bandwidth, low latency video stream                                                 |
+| jpeg-stream/receiver2.py                 | Receiving and playback the stream video (moved to https://github.com/rc-bellergy/groundstation) |
+| jpeg-stream/control2.py                  | Use remote control to start, stop, recording video                                              |
+| offboard/rtl-altitude.py                 | Adjust RTL altitude based on the max elevation on the RTL path (under development)              |
 
 
 

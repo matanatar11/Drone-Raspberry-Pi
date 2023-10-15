@@ -42,7 +42,7 @@ connection the Pixhawk (RCIN) to receiver (PPM/CH1)
 
 ## Raspberry Pi to Pixhawk Electric diagram 
 
-<img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/da9c3078-5146-40d2-8bda-5e12142c2a5a" width="300"  />
+<img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/da9c3078-5146-40d2-8bda-5e12142c2a5a" width="600"  />
 
 
 

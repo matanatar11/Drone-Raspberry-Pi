@@ -23,8 +23,7 @@ Pixhawk + Raspberry Pi + LTE(4G)
 ## Drone ESCs motors connecting 
    Motor location and direction
 
-＜img src="![motororder-quad-x-2d](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/af9290fb-06f4-46eb-b9ea-6c429c936531)
-" width="100" height="10"＞
+＜img src="![motororder-quad-x-2d](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/af9290fb-06f4-46eb-b9ea-6c429c936531)" width="100" height="10"＞
 
 
    Connecting the ESCS to the Pixhawk

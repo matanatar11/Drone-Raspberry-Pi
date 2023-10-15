@@ -2,11 +2,11 @@
 Pixhawk + Raspberry Pi + LTE(4G) 
 
 ## Hardwares/Components
-- Frme: **F450**
-- Flight Controller: **Pixhawk1**
-- Onboard computer: **Raspberry 3**
-- Network: **dongel** (3G/4G)
-- Radio system: **FS-I6X**  receiver **IA10B**
+- Frme: **F450**;
+- Flight Controller: **Pixhawk1**;
+- Onboard computer: **Raspberry 3**;
+- Network: **dongel** (3G/4G);
+- Radio system: **FS-I6X**  receiver **IA10B**;
 
 ## Features
 - Connect Pixhawk and Raspberry Pi using `mavlink`;
@@ -16,9 +16,9 @@ Pixhawk + Raspberry Pi + LTE(4G)
 - The pilot can use radio control to switch on/off the video streaming;
 
 ## Software
-- MissionPlanner
-- QGroundControl
-- Dronekit, Mavlink.
+- MissionPlanner;
+- QGroundControl;
+- Dronekit, Mavlink.;
 
 ## Drone ESCs motors connecting 
    Motor location and direction
@@ -27,7 +27,7 @@ Pixhawk + Raspberry Pi + LTE(4G)
 
    Connecting the ESCS to the Pixhawk
 
-   
+
 ![Pixhwak_outputs](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/b38fad30-746c-4303-b380-7baf7e2aad01)
 
 

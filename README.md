@@ -36,12 +36,15 @@ Pixhawk + Raspberry Pi + LTE(4G)
 ## Connecting Pixhawk to FS-iA6B receiver
 connection the Pixhawk (RCIN) to receiver (PPM/CH1)
 
-![2a920606ed36b02be4c88e081c44bcebc4820e91_2_999x750](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/bad2ae77-4b02-4a4f-8521-57d1e9f512b6)
+<img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/bad2ae77-4b02-4a4f-8521-57d1e9f512b6" width="300"  />
+
 
 
 ## Raspberry Pi to Pixhawk Electric diagram 
 
-![Pixhawk-to-Raspberry-PI-3-scheme](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/da9c3078-5146-40d2-8bda-5e12142c2a5a)
+<img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/da9c3078-5146-40d2-8bda-5e12142c2a5a" width="300"  />
+
+
 
 
 ## Raspberry Pi setup 
@@ -70,9 +73,9 @@ installed Python3 mavproxy and dronekit
       python3 scriptnem.py
             python3 gotoNE.py
 
+<img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/a7978788-da8f-452b-a103-98ebee92a2ab" width="300"  />
 
 
-![IMG20231010133839](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/a7978788-da8f-452b-a103-98ebee92a2ab)
 
 
 

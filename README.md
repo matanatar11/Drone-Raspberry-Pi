@@ -76,14 +76,21 @@ Login and create a new Network
 Through Zerotier, we can create a VLAN that put the Raspberry Pi drone and Ground Station in the same local network. Let us connect the Raspberry Pi to the ground station more easily.
 
 Execute the following shell command in Raspberry Pi to download the Zerotier:
+
          curl -s https://install.zerotier.com | sudo bash
+
 Testing the installation
+
          sudo zerotier-cli status
+
 If you can see 200 info [ID] [version] ONLINE then successed
 
 Make the Zerotier auto-start on system boot
+
        sudo systemctl enable zerotier-one
+
 Join the zerotier to your network
+
        sudo zerotier-cli join [Network ID]
 
 3. Install the Zerotier One client on the ground station PC

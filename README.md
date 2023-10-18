@@ -64,11 +64,46 @@ installed Python3 mavproxy and dronekit
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 
 
 
+## create a private network with zerotier
+
+    ZeroTier provides a convenient way for us to easily connect the drone and the ground station through the 4G network without having to build a VPN by ourselves.
+
+1. Register and set up a ZeroTier account
+Register a new account on zerotier.com
+Login and create a new Network
+
+2. Install zerotier-one client on Raspberry Pi
+Through Zerotier, we can create a VLAN that put the Raspberry Pi drone and Ground Station in the same local network. Let us connect the Raspberry Pi to the ground station more easily.
+
+Execute the following shell command in Raspberry Pi to download the Zerotier:
+       curl -s https://install.zerotier.com | sudo bash
+Testing the installation
+       sudo zerotier-cli status
+If you can see 200 info [ID] [version] ONLINE then successed
+
+Make the Zerotier auto-start on system boot
+       sudo systemctl enable zerotier-one
+Join the zerotier to your network
+       sudo zerotier-cli join [Network ID]
+
+3. Install the Zerotier One client on the ground station PC
+Download and install the Zerotier to your PC
+
+Then select Join Network and input the Network ID
+
+4. Approve the connection of Raspberry Pi and ground station in your Zerotier account
+
+
 ## Raspbrry pi intrnet briudg to Pixhawk and Connecting to ground station
-      sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
-      sudo mavproxy.py --master=udp:10.0.0.8:14550 --out=/dev/ttyAMA0
+
+      sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out [ip pc ground station]:14550
 
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out 10.0.0.10:14550
+      
+      #** sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
+      #** sudo mavproxy.py --master=udp:10.0.0.10:14550 --out=/dev/ttyAMA0
+
+      
 
   
 ## Run a script 

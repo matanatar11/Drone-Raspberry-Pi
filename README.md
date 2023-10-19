@@ -105,13 +105,6 @@ Then select Join Network and input the Network ID
 
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out [ip pc ground station]:14550
 
-      sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out 10.0.0.10:14550
-      
-      #** sudo mavproxy.py --master=udp:192.168.8.100:14550 --out=/dev/ttyAMA0.5760
-      #** sudo mavproxy.py --master=udp:10.0.0.10:14550 --out=/dev/ttyAMA0
-
-      
-
   
 ## Run a script 
      

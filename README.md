@@ -2,7 +2,7 @@
 Pixhawk + Raspberry Pi + LTE(4G) 
 
 ## Hardwares/Components
-- Frme: **F450**;
+- Frame: **F450**;
 - Flight Controller: **Pixhawk1**;
 - Onboard computer: **Raspberry 3**;
 - Network: **dongel** (3G/4G);

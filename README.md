@@ -122,7 +122,7 @@ Then select Join Network and input the Network ID
 
 
 
-
+         https://youtu.be/C_EwRV1htT0
 
 
 

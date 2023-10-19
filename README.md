@@ -64,7 +64,7 @@ installed Python3 mavproxy and dronekit
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 
 
 
-## create a private network with zerotier
+## Create a private network with zerotier
 
 ZeroTier provides a convenient way for us to easily connect the drone and the ground station through the 4G network without having to build a VPN by ourselves.
 
@@ -122,6 +122,9 @@ Then select Join Network and input the Network ID
          
 
 ## video Run script  gotoNEgps.py
+
+
+![mq3](https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/610712fe-c011-4cc6-8c4b-f075a7991602)
 
 https://youtu.be/C_EwRV1htT0
 

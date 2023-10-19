@@ -101,7 +101,7 @@ Then select Join Network and input the Network ID
 4. Approve the connection of Raspberry Pi and ground station in your Zerotier account
 
 
-## Raspbrry pi intrnet briudg to Pixhawk and Connecting to ground station
+## Raspberry pi internet bridge to Pixhawk and Connecting to ground station
 
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out [ip pc ground station]:14550
 

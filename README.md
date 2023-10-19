@@ -119,12 +119,9 @@ Then select Join Network and input the Network ID
             python3 gotoNE.py
 
 <img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/a7978788-da8f-452b-a103-98ebee92a2ab" width="300"  />
+         
 
-
-
-         https://youtu.be/C_EwRV1htT0
-
-
+## video Run script  gotoNEgps.py
 
 https://youtu.be/C_EwRV1htT0
 

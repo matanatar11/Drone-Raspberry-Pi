@@ -110,6 +110,7 @@ Then select Join Network and input the Network ID
      
       python3 scriptnem.py
       python3 gotoNEgps.p
+      gotoNEGPSRTL_v2.py
 
 <img src="https://github.com/matanatar11/Drone-Raspberry-Pi-/assets/101950216/a7978788-da8f-452b-a103-98ebee92a2ab" width="300"  />
          

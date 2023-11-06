@@ -104,7 +104,7 @@ Then select Join Network and input the Network ID
 ## Raspberry pi internet bridge to Pixhawk and Connecting to ground station
 
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out [ip pc ground station]:14550
-
+      sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out 10.0.0.10:14550
   
 ## Run a script 
      

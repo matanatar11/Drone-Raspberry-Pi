@@ -81,6 +81,7 @@ To update an existing installation with the current development version (ie, fro
 
 ## Connecting to Pixhawk from raspbrry pi
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 
+     OR  sudo mavproxy.py --master=/dev/serial0 --baudrate 57600
 
 
 ## Create a private network with zerotier
@@ -124,7 +125,9 @@ Then select Join Network and input the Network ID
 
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out [ip pc ground station]:14550
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out 10.0.0.10:14550
-  
+
+      sudo mavproxy.py --master=/dev/serial0 --baudrate 57600 --out 10.0.0.10:14550
+ 
 ## Run a script 
      
       python3 scriptnem.py

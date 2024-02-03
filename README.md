@@ -58,7 +58,26 @@ installed Python3 mavproxy and dronekit
       sudo apt-get install screen python3-wxgtk4.0 python3-lxml
       sudo pip3 install pyserial
       sudo pip install dronekit  # sudo pip3 install donekit
-      sudo pip3 install  MAVProxy
+      sudo pip3 install  MAVProxysudo apt-get install python3-dev python3-opencv python3-wxgtk4.0 python3-pip python3-matplotlib python3-lxml python3-pygame
+
+
+
+    pip3 install PyYAML mavproxy --user
+    echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
+
+If you get a “permission denied” error message when connecting to serial devices, the user permissions may need to be changed:
+
+    sudo usermod -a -G dialout <username>
+      
+Updating¶
+To update an existing installation with the current release:
+
+      pip3 install mavproxy pymavlink --user --upgrade
+To update an existing installation with the current development version (ie, from its master branch):
+
+      pip3 install mavproxy --user git+https://github.com/ArduPilot/mavproxy.git@master
+
+
 
 ## Connecting to Pixhawk from raspbrry pi
       sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 

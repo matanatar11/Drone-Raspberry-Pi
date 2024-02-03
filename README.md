@@ -57,7 +57,7 @@ installed Python3 mavproxy and dronekit
       sudo apt-get install python3-lxml
       sudo apt-get install screen python3-wxgtk4.0 python3-lxml
       sudo pip3 install pyserial
-      sudo pip3 install donekit
+      sudo pip install dronekit  # sudo pip3 install donekit
       sudo pip3 install  MAVProxy
 
 ## Connecting to Pixhawk from raspbrry pi

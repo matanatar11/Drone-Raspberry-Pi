@@ -120,6 +120,40 @@ Then select Join Network and input the Network ID
 
 4. Approve the connection of Raspberry Pi and ground station in your Zerotier account
 
+##  Raspberry pi camera live video strem to mission planner
+https://elinux.org/RPi-Cam-Web-Interface#Basic_Installation
+
+1. Enable camera support 
+       sudo raspi-config
+Select Option 5 Interfacing Options, then P1 Camera, then Yes. Exit and reboot your Pi (this is important!)
+
+2. Update your RPi with the following commands:
+       sudo apt-get update
+       sudo apt-get dist-upgrade
+       sudo apt-get install git
+3.Clone the code from github and enable and run the install script with the following commands:
+
+       git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git
+       cd RPi_Cam_Web_Interface
+
+ For preBuster versions of the OS you will need a different version of raspimjpeg in the bin folder. If you are running Stretch (or earlier), execute the following:
+
+       # NOTE: ONLY DO THIS IF YOU ARE RUNNING STRETCH OR EARLIER!
+      cd bin
+      mv raspimjpeg raspimjpeg-buster
+      mv raspimjpeg-stretch raspimjpeg
+      cd ..
+
+4.Then carry on with the installation:
+
+      ./install.sh
+
+ mission planner concted
+ 
+       http://10.0.0.13/html/cam_pic_new.php?time=1707075454299&pDelay=40000
+
+      
+
 
 ## Raspberry pi internet bridge to Pixhawk and Connecting to ground station
 

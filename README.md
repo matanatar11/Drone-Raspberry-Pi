@@ -135,6 +135,9 @@ Select Option 5 Interfacing Options, then P1 Camera, then Yes. Exit and reboot y
        sudo apt-get install git
 3.Clone the code from github and enable and run the install script with the following commands:
 
+       git clone https://github.com/matanatar11/RPi_Cam_Web_Interface.git
+       cd RPi_Cam_Web_Interface
+OR
        git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git
        cd RPi_Cam_Web_Interface
 

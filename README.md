@@ -123,11 +123,13 @@ Then select Join Network and input the Network ID
 ##  Raspberry pi camera live video strem to mission planner
 https://elinux.org/RPi-Cam-Web-Interface#Basic_Installation
 
-1. Enable camera support 
-       sudo raspi-config
+1. Enable camera support
+   
+     sudo raspi-config
+   
 Select Option 5 Interfacing Options, then P1 Camera, then Yes. Exit and reboot your Pi (this is important!)
 
-2. Update your RPi with the following commands:
+3. Update your RPi with the following commands:
        sudo apt-get update
        sudo apt-get dist-upgrade
        sudo apt-get install git
